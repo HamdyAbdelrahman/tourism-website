@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="fas fa-bars" id="menu-bar" onclick="showmenu()"></div>
+        <a href="" class="logo"><span>H</span>amdy<span>T</span>ravel</a>
+        <div class="nav">
+            <a href="#Home" class="Home">Home</a>
+            <a href="#About" class="About">About</a>
+            <a href="#Book" class="Book">Book</a>
+            <a href="#packages" class="packages">packages</a>
+            <a href="#Services" class="Services">Services</a>
+            <a href="#Gallary" class="Gallary">Gallary</a>
+            <a href="#Review" class="Review">Review</a>
+            <a href="#Contact" class="Contact">Contact</a>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search" onclick="showup()" id="search-btn"></i>
+            <i class="fas fa-user" onclick="showdown()"></i>
+        </div>
+
+    </header>
+    <div class="hidden">
+    <form action="" class="search-form" >
+        <input type="text" id="search" placeholder=" what are you searching for...">
+        <label for="search" class="fas fa-search"></label>
+    </form>
+    </div>
+    <div class="login-form">
+        <i class="fas fa-times" onclick="hideForm()" id="closeForm"></i>
+        <form action="">
+        <h3>LOGIN</h3>
+        <input type="email" class="box" placeholder="enter your email...">
+        <input type="password" class="box" placeholder="enter your password...">
+        <button>LOGIN</button>
+        <input type="checkbox" name="" id="remember">
+        <label for="remember">remember me</label>
+        <p>forget password <a href="#">click here</a></p> 
+        <p>Dont have account <a href="#">sign up</a></p> 
+    </form>
+    </div>
+    <!----------------------------------------------------------------------------------->
+    <section class="home">
+    <div class="content">
+        <h3>HAMDY TRAVEL MAKE TRAVEL EASY</h3>
+        <p>Discover New Places With Us, Adventure Awaits </p>
+        <button>Discover More</button>
+    </div>
+        <div class="control">
+            <span class="video-btn active" data-src="images/vid-1.mp4" onclick="showvid()"></span>
+            <span class="video-btn"data-src="images/vid-2.mp4"></span>
+            <span class="video-btn"data-src="images/vid-3.mp4"></span>
+            <span class="video-btn"data-src="images/vid-4.mp4"></span>
+            <span class="video-btn"data-src="images/vid-5.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+    </section>
+    <!----------------------------------------------------------------------------------->
+    <section class="book" id="Book" >
+        <div class="heading">
+            <span>B</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            &nbsp;
+            &nbsp;
+            <span>N</span>
+            <span>o</span>
+            <span>w</span>
+        </div>
+        <div class="row">
+        <div class="img">
+            <img src="images/book-img.svg" alt="">
+        </div>
+        <form action="">
+            <div class="input">
+                <h3>where to go</h3>
+                <input type="text" placeholder="place Name">
+                <h3>How Many</h3>
+                <input type="text" placeholder="place Name">
+                <h3>Arrival</h3>
+                <input type="text" placeholder="place Name">
+                <h3>Leaving</h3>
+                <input type="text" placeholder="place Name">
+                <button>BOOKNOW</button>
+            </div>
+        </form>
+    </div>
+    </section>
+    <!-------------------------------------------------------------------------->
+    <section class="packages" id="packages">
+        <div class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </div>
+        <div class="container">
+            <div class="box">
+                <img src="images/p-1.jpg" alt="">
+                <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> koria</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis.</p>
+                <div class="stars"> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">$90.00 <span>$120.00</span></div>
+                <button>Check Now</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-2.jpg" alt="">
+                <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> japan</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis.</p>
+                <div class="stars"> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">$90.00 <span>$120.00</span></div>
+                <button>Check Now</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-3.jpg" alt="">
+                <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> pali</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis.</p>
+                <div class="stars"> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">$90.00 <span>$120.00</span></div>
+                <button>Check Now</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-4.jpg" alt="">
+                <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> germany</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis.</p>
+                <div class="stars"> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">$90.00 <span>$120.00</span></div>
+                <button>Check Now</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-5.jpg" alt="">
+                <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> usa</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis.</p>
+                <div class="stars"> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">$90.00 <span>$120.00</span></div>
+                <button>Check Now</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/p-6.jpg" alt="">
+                <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Egypt</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis.</p>
+                <div class="stars"> 
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">$90.00 <span>$120.00</span></div>
+                <button>Check Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------------------------------->
+    <section class ="services">
+        <div class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </div>
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>affordable Hotel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dignissimos unde error? At reiciendis fuga sit fugit quae provident. Atque!</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dignissimos unde error? At reiciendis fuga sit fugit quae provident. Atque!</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>safty guide</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dignissimos unde error? At reiciendis fuga sit fugit quae provident. Atque!</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dignissimos unde error? At reiciendis fuga sit fugit quae provident. Atque!</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dignissimos unde error? At reiciendis fuga sit fugit quae provident. Atque!</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>Adventure</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dignissimos unde error? At reiciendis fuga sit fugit quae provident. Atque!</p>
+            </div>
+        </div>
+    </section>
+    <!---------------------------------------------------------------------->
+    <section class="Gallary" id="Gallary">
+        <div class="heading">
+            <span>G</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>a</span>
+            <span>r</span>
+            <span>y</span>
+        </div>
+        <div class="container">
+            <div class="box">
+                <img src="images/g-1.jpg" alt="">
+                <div class="content">
+                    <h3> amazing place</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi!</p>
+                    <button>see more</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-2.jpg" alt="">
+                <div class="content">
+                    <h3> amazing place</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi!</p>
+                    <button>see more</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-3.jpg" alt="">
+                <div class="content">
+                    <h3> amazing place</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi!</p>
+                    <button>see more</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-4.jpg" alt="">
+                <div class="content">
+                    <h3> amazing place</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi!</p>
+                    <button>see more</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-5.jpg" alt="">
+                <div class="content">
+                    <h3> amazing place</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi!</p>
+                    <button>see more</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-6.jpg" alt="">
+                <div class="content">
+                    <h3> amazing place</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi!</p>
+                    <button>see more</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-7.jpg" alt="">
+                <div class="content">
+                    <h3> amazing place</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi!</p>
+                    <button>see more</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-8.jpg" alt="">
+                <div class="content">
+                    <h3> amazing place</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi!</p>
+                    <button>see more</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/g-9.jpg" alt="">
+                <div class="content">
+                    <h3> amazing place</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi!</p>
+                    <button>see more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-------------------------------------------------------------------------------->
+    <section class="Review" id="review">
+        <div class="heading">
+            <span>R</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </div>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic1.jpg" alt="">
+                        <h3>jack moe</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ducimus sequi nam nisi quidem velit ullam. Voluptatum rem asperiores dolore?</p>
+                        <div class="stars"> 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic2.jpg" alt="">
+                        <h3>jack moe</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ducimus sequi nam nisi quidem velit ullam. Voluptatum rem asperiores dolore?</p>
+                        <div class="stars"> 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic3.jpg" alt="">
+                        <h3>jack moe</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ducimus sequi nam nisi quidem velit ullam. Voluptatum rem asperiores dolore?</p>
+                        <div class="stars"> 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="images/pic4.jpg" alt="">
+                        <h3>jack moe</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum ducimus sequi nam nisi quidem velit ullam. Voluptatum rem asperiores dolore?</p>
+                        <div class="stars"> 
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------------------------------------------->
+    <section class="contact" id="contact">
+        <div class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </div>
+        <div class="row">
+            <div class="img">
+                <img src="images/contact-img.svg" alt="">
+            </div>
+            <form action="">
+                <div class="inputbox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputbox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="message"></textarea>
+                <button>send message</button>
+            </form>
+        </div>
+    </section>
+    <!------------------------------------------------------------------------------------>
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About us</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt tempore atque autem soluta vero praesentium ipsa a, at voluptate eaque!</p>
+            </div>
+            <div class="box">
+                <h3>Branch</h3>
+                <a href="#">Egypt</a>
+                <a href="#">London</a>
+                <a href="#">koria</a>
+                <a href="#">japan</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">Home</a>
+                <a href="#">book</a>
+                <a href="#">package</a>
+                <a href="#">Gallary</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a>
+            </div>
+        </div>
+        <h1 class="created"> created by <span>Hamdy Abdelrahman</span> All Right Reserved</h1>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="travel.js"> </script>
+</body>
+</html>
